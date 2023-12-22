@@ -1,9 +1,10 @@
+
 import React, { useState, useEffect } from 'react';
 import './Livematch'
 const CricketScoreApp = () => {
   const [liveMatches, setLiveMatches] = useState([]);
  
-
+//eslint-disable-next-line
   const fetchData = () => {
     // Fetch live matches
     fetch('https://cricket-score-production.up.railway.app/match/Live')
@@ -14,7 +15,9 @@ const CricketScoreApp = () => {
     // Fetch all matches
    
   };
+  //eslint-disable-next-line
   const [loading, setLoading] = useState(true);
+  //eslint-disable-next-line
   const [error, setError] = useState(null);
   
   useEffect(() => {
