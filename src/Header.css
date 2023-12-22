@@ -1,0 +1,46 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000; /* Dark background */
+    color: #fff; /* White text color */
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .options {
+    display: flex;
+  }
+  
+  .option {
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #fff;
+    
+  }
+
+  .option {
+    color: white; /* Initial text color */
+    transition: color 0.3s ease; /* Transition for a smooth effect */
+  
+    /* Additional styling for better visibility on hover */
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .option:hover {
+    color: rgb(122, 8, 8); /* Text color on hover */
+  }
+  
+  /* You can add more styling as per your requirements */
+  
