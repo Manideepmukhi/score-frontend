@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './Livematch'
 const CricketScoreApp = () => {
   const [liveMatches, setLiveMatches] = useState([]);
-  const [allMatches, setAllMatches] = useState([]);
+ 
 
   const fetchData = () => {
     // Fetch live matches
-    fetch('http://localhost:8080/match/Live')
+    fetch('https://cricket-score-production.up.railway.app/match/Live')
       .then(response => response.json())
       .then(data => setLiveMatches(data))
       .catch(error => console.error('Error fetching live matches:', error));
